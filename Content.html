@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Selection</title>
+    <link rel="stylesheet" href="JourneySelection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <style>
+      *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body{
+        padding: 30px;
+        margin: 0;
+        background: linear-gradient(to bottom, #6B46C1, #9266C7);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .splash-screen{
+        width: 600px;
+        background-color: white;
+        border-radius: 20px;
+
+        .match-card{
+            padding: 20px 20px;
+
+            .profile-section{
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                img{
+                    width: 80px;
+                }
+
+                .info{
+                    margin-left: 30px;
+                    font-size: 1rem;
+                    line-height: 30px;
+                }
+            }
+        }
+      }
+
+      .map{
+        width: 100%;
+        height:200px;
+        background-color: #fff;
+        border: 1px solid black;
+        margin: 50px 0;
+      }
+
+      .details{
+        border: 1px solid black;
+        padding: 20px;
+      }
+
+      .details-btn{
+        margin: 0 auto;
+        background-color: yellow;
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+      }
+    </style>
+<body>
+    <div class="splash-screen">
+        <div class="match-card">
+            <div class="profile-section">
+                <img class="profile-pic" src="./images/logo2.png" alt="Mickey">
+                <div class="info">
+                    <div class="name">Mickey</div>
+                    <div class="faculty">Faculty of Information Technology</div>
+                </div>
+            </div>
+            <div class="map"></div>
+            <div class="details">
+                <p><strong>ต้นทาง</strong></p>
+                <ul>
+                    <li>บิ๊กซี พระราม 4</li>
+                </ul>
+                <p><strong>ปลายทาง</strong></p>
+                <ul>
+                    <li>สลอ คณะ ไอที</li>
+                </ul>
+                <p><strong>ประเภทการเดินทาง</strong></p>
+                <ul>
+                    <li>แท็กซี่</li>
+                </ul>
+                <p><strong>จำนวนผู้ร่วมทาง</strong></p>
+                <ul>
+                    <li>0/5</li>
+                </ul>
+            </div>
+            <button class="details-btn" onclick="window.location.href='./detail.html'" class="button fixed-bottom">รายละเอียดเพิ่มเติม</button>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+
+</html>
